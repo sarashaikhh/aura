@@ -1,0 +1,60 @@
+/* Full-screen GIF styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    width: 40px;  /* Same size as sub-circles */
+    height: 40px; /* Same size as sub-circles */
+    background-color: white; /* White color for main circle */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+.main-circle a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+/* Expanded state - triggered by JavaScript */
+.menu.open .sub-circle {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effects for glowing circles */
+.main-circle:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Glow effect on hover */
+}

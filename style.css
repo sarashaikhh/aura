@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+}
+
+/* Individual color on hover for each circle */
+nav li:nth-child(1) a:hover {
+    background-color: #DA5D82;
+}
+
+nav li:nth-child(2) a:hover {
+    background-color: #9D79C2;
+}
+
+nav li:nth-child(3) a:hover {
+    background-color: #77B2E2;
+}
+
+nav li:nth-child(4) a:hover {
+    background-color: #7DD256;
+}
+
+nav li:nth-child(5) a:hover {
+    background-color: #EAE15A;
+}
+
+nav li:nth-child(6) a:hover {
+    background-color: #E1693B;
+}
+
+nav li:nth-child(7) a:hover {
+    background-color: #5D5C5C;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
